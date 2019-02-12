@@ -1,11 +1,11 @@
  // Initialize Firebase
  var config = {
-   apiKey: "AIzaSyD6hLxWp4GTcbmZiFjmuCLAH7_bAJbC3Z4",
-   authDomain: "door-opener-5788d.firebaseapp.com",
-   databaseURL: "https://door-opener-5788d.firebaseio.com",
-   projectId: "door-opener-5788d",
-   storageBucket: "",
-   messagingSenderId: "568920055462"
+   apiKey: "AIzaSyB1zkOFxgZpo7mSdY-7A3QYd7PgA25-L8U",
+   authDomain: "real-time-door-opener.firebaseapp.com",
+   databaseURL: "https://real-time-door-opener.firebaseio.com",
+   projectId: "real-time-door-opener",
+   storageBucket: "real-time-door-opener.appspot.com",
+   messagingSenderId: "971843951010"
  };
  firebase.initializeApp(config);
 
