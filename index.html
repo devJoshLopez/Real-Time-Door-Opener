@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Real-Time Door Opener</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Changa+One|Spectral" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.css" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <div class="nav-wrapper">
+    <div id="Login-Button" class="auth-button btn btn-primary">Login/Signup</div>
+  </div>
+
+  <div class="desktop hidden-xs">
+    <div class="desktop-top">
+      <div class="sign">
+        <div class="sign-text">221B Baker Street</div>
+      </div>
+      <div class="door">
+        <div class="door-front closed"></div>
+        <div class="door-background"></div>
+      </div>
+      <div class="keypad">
+        <div class="keypad-indicator door-locked"></div>
+      </div>
+    </div>
+    <div class="desktop-bottom">
+      <div class="container">
+        <h2>Problem:</h2>
+        <p>You are the great detective Sherlock Holmes. Watson has to get into your apartment but he doesn't have a key.</p>
+        <h2>Solution:</h2>
+        <p>Luckily you have already installed a remote control door lock. Show Watson how to use the website and open the door.</p>
+        <ol>
+          <li>Go to this page on your phone and desktop computer and login to both.</li>
+          <li>Tap the button on your phone to open the door on your desktop computer and enter this space.</li>
+          <li>Now tell Watson to take out the trash on the way out.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile hidden-sm hidden-md hidden-lg">
+    <div class="container text-center">
+      <h2>Holmes Home</h2>
+      <p>221B Baker Street</p>
+      <div class="tap-button-wrapper">
+        <div class="tap-blocker"></div>
+        <div class="tap-button-background">
+          <a href="#" id="Open-Sesame" class="tap-link"></a>
+        </div>
+      </div>
+      <p>tap to enter this space</p>
+    </div>
+  </div>
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-functions.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./js/scripts.js"></script>
+</body>
+
+</html>

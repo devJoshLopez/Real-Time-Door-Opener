@@ -1,0 +1,269 @@
+.hide {
+  display: none;
+}
+
+body {
+  font-family: "Spectral", serif;
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Changa One", cursive;
+}
+
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.nav-wrapper .auth-button {
+  font-family: "Changa One", cursive;
+  font-size: 1em;
+  box-shadow: 0 2px 3px 0 #000;
+  margin: 20px;
+}
+
+.desktop-top {
+  position: relative;
+  height: 240px;
+  min-width: 350px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.57), transparent),
+    url(https://uploads-ssl.webflow.com/5adfc8905799b7d6264a3c13/5af67b10147ee321d03bc1f5_grunge_wall_%402X.png);
+  background-position: 0 0, 0 0;
+  background-size: auto, 500px;
+  -webkit-perspective: 840px;
+  perspective: 840px;
+}
+
+.desktop-top .sign {
+  left: -100px;
+  top: 120px;
+  width: 75px;
+  padding: 5px;
+  background-image: url(https://uploads-ssl.webflow.com/5adfc8905799b7d6264a3c13/5af6854495f85863fbed47eb_concrete_wall_%402X.png);
+  background-position: 0 0;
+  background-size: 520px;
+}
+
+.desktop-top .sign .sign-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9em;
+  line-height: 1em;
+  text-align: center;
+  font-family: "Changa One", cursive;
+}
+
+.desktop-top .door {
+  display: block;
+  width: 85px;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 3px solid rgba(0, 0, 0, 0.42);
+  border-right: 3px solid rgba(0, 0, 0, 0.42);
+  border-left: 3px solid rgba(0, 0, 0, 0.42);
+}
+
+.desktop-top .door .door-front {
+  top: 0;
+  z-index: 2;
+  display: block;
+  background-color: #000;
+  background-image: url(https://uploads-ssl.webflow.com/5adfc8905799b7d6264a3c13/5af6854495f85863fbed47eb_concrete_wall_%402X.png);
+  background-position: 0 50%;
+  background-size: 520px;
+  box-shadow: 0 4px 6px -4px #000;
+  transform: rotate(0);
+  -webkit-transform-origin: 0 50%;
+  -ms-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.desktop-top .door .door-front.closed {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+.desktop-top .door .door-front.opened {
+  -webkit-transform: rotateY(-142deg);
+  -moz-transform: rotateY(-142deg);
+  -o-transform: rotateY(-142deg);
+  transform: rotateY(-142deg);
+  transform-origin: 0;
+  transition: 0.5s linear;
+}
+
+.desktop-top .door .door-background {
+  top: 0;
+  z-index: 1;
+  background-image: url(https://uploads-ssl.webflow.com/5adfc8905799b7d6264a3c13/5af687df147ee301013bc504_universe.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.desktop-top .door,
+.desktop-top .door .door-front,
+.desktop-top .door .door-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.desktop-top .keypad {
+  left: 60px;
+  top: 80px;
+  width: 21px;
+  height: 21px;
+  padding: 5px;
+  background-image: linear-gradient(180deg, #000, #000);
+}
+
+.desktop-top .keypad .keypad-indicator {
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
+  background-color: #777;
+  box-shadow: 0 0 10px 2px #777;
+}
+
+.desktop-top .keypad .keypad-indicator.door-locked {
+  background-color: #db2f73;
+  box-shadow: 0 0 10px 2px #db2f73;
+}
+
+.desktop-top .keypad .keypad-indicator.door-unlocked {
+  background-color: #78ed20;
+  box-shadow: 0 0 10px 2px #78ed20;
+}
+
+.desktop-top .sign,
+.desktop-top .keypad {
+  position: relative;
+  box-shadow: 0 2px 3px 0 #000;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mobile {
+  min-height: 100vh;
+  padding: 84px 20px 20px 20px;
+  background-image: -webkit-radial-gradient(circle farthest-side at 50% 50%,
+    transparent,
+    rgba(0, 0, 0, 0.3)),
+    url(https://uploads-ssl.webflow.com/5adfc8905799b7d6264a3c13/5af69b9a8b57f780ed974851_dust_scratches.png);
+  background-image: radial-gradient(circle farthest-side at 50% 50%,
+    transparent,
+    rgba(0, 0, 0, 0.3)),
+    url(https://uploads-ssl.webflow.com/5adfc8905799b7d6264a3c13/5af69b9a8b57f780ed974851_dust_scratches.png);
+  background-position: 0 0, 0 0;
+}
+
+.mobile .tap-button-wrapper {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.mobile .tap-button-wrapper .tap-blocker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  display: none;
+}
+
+.mobile .tap-button-wrapper .tap-button-background {
+  position: relative;
+  display: inline-block;
+  margin-right: -4px;
+  z-index: 1;
+}
+
+.mobile .tap-button-wrapper .tap-button-background:before {
+  content: "";
+  display: block;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+}
+
+.mobile .tap-button-wrapper .tap-button-background a {
+  position: relative;
+  display: block;
+  width: 144px;
+  height: 144px;
+  margin: 20px 36px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  background-image: -webkit-linear-gradient(90deg, #f7f7f7, #e7e7e7);
+  background-image: linear-gradient(0deg, #f7f7f7, #e7e7e7);
+  box-shadow: inset 0 2px 3px 0 #fff, 0 3px 8px 0 #aaa;
+  color: #a7a7a7;
+  line-height: 144px;
+  cursor: pointer;
+}
+
+.mobile .tap-button-wrapper .tap-button-background a:before {
+  content: "";
+  display: block;
+  background: #fff;
+  border-top: 2px solid #ddd;
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  bottom: -18px;
+  right: -18px;
+  z-index: -1;
+  border-radius: 50%;
+  box-shadow: inset 0px 8px 48px #ddd;
+}
+
+.mobile .tap-button-wrapper .tap-button-background a:after {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Fingerprint_picture.svg/2000px-Fingerprint_picture.svg.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  opacity: 0.3;
+  transition: all 0.4s ease-out;
+}
+
+.mobile .tap-button-wrapper .tap-button-background a:hover:after {
+  opacity: 0.6;
+  box-shadow: 0 0 40px rgba(255, 165, 0, 0.8);
+}
+
+.mobile .tap-button-wrapper .tap-button-background a.door-opened:after {
+  opacity: 0.6;
+  box-shadow: 0 0 40px rgba(120, 237, 32, 0.8);
+}
